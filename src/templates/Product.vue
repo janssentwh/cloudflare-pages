@@ -148,7 +148,6 @@ query Product ($id: ID!) {
     id
     descriptionHtml
     title
-    tags
     images(limit: 4) {
       id
       altText
