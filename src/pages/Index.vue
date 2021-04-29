@@ -8,7 +8,7 @@
           <div class="column is-two-fifths header">
             <div class="header-content">
               <h1 class="title is-size-1 is-family-secondary">
-                Our Core Collection
+                Dorst? Lessend
               </h1>
               <div
                 v-html="collection.descriptionHtml"
@@ -16,7 +16,7 @@
               <g-link
                 :to="`collection/${collection.handle}`"
                 class="button">
-                Shop Now
+                Koop bier
               </g-link>
             </div>
           </div>
@@ -35,7 +35,7 @@
     <div class="container has-text-centered">
       <hr>
       <h3 class="title is-size-4 is-family-secondary">
-        Featured Products
+        Vers
       </h3>
       <hr>
       <br>

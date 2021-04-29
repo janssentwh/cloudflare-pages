@@ -6,11 +6,9 @@
     <div class="navbar-brand">
       <g-link
         to="/"
-        class="navbar-item"
-        href="https://gridsome.org/">
-        <img
-          src="../favicon.png"
-          alt="Gridsome Logo">
+        class="navbar-item navbar-logo"
+        href="/">
+        Exobrew
       </g-link>
 
       <button
@@ -38,46 +36,9 @@
           class="navbar-item">
           Collections
         </g-link>
-        <g-link
-          to="/"
-          class="navbar-item">
-          Contact
-        </g-link>
-        <g-link
-          to="/about"
-          class="navbar-item">
-          About
-        </g-link>
       </div>
 
       <div class="navbar-end">
-        <div
-          class="navbar-item has-dropdown"
-          :class="{'is-active': searchResults.length}">
-          <div class="control">
-            <label for="search">
-              <input
-                id="search"
-                v-model="searchTerm"
-                class="input is-small"
-                type="text"
-                placeholder="Search">
-            </label>
-          </div>
-          <div class="navbar-dropdown">
-            <g-link
-              v-for="({ node: result, path }) in searchResults"
-              :key="result.id"
-              :to="path"
-              class="navbar-item">
-              {{ result.title }}
-            </g-link>
-            <hr class="navbar-divider">
-            <div class="navbar-item">
-              View more results
-            </div>
-          </div>
-        </div>
         <g-link
           to="/cart"
           class="navbar-item">
@@ -114,5 +75,11 @@ export default {
 .navbar-burger {
   background-color: transparent;
   border: none;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 180%;
+  margin-right: 2rem;
 }
 </style>

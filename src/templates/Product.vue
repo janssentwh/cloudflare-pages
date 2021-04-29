@@ -151,8 +151,8 @@ query Product ($id: ID!) {
     images(limit: 4) {
       id
       altText
-      src: transformedSrc(maxWidth: 600, maxHeight: 400, crop: CENTER)
-      thumbnail: transformedSrc(maxWidth: 150, maxHeight: 150, crop: CENTER)
+      src: transformedSrc(maxWidth: 600, maxHeight: 400, crop: TOP)
+      thumbnail: transformedSrc(maxWidth: 150, maxHeight: 150, crop: TOP)
     }
     options {
       id
